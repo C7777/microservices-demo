@@ -1,0 +1,5 @@
+2022-01-15 13:19:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on L-MAA-42620027 with PID 22352 (C:\Users\cmadival\Documents\workspace\microservices-demo\twitter-to-kafka-service\target\classes started by cmadival in C:\Users\cmadival\Documents\workspace\microservices-demo)
+2022-01-15 13:19:46 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-01-15 13:19:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.002 seconds (JVM running for 3.631)
+2022-01-15 13:19:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2022-01-15 13:19:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]

@@ -1,0 +1,132 @@
+2022-01-16 12:01:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on L-MAA-42620027 with PID 2548 (C:\Users\cmadival\Documents\workspace\microservices-demo\twitter-to-kafka-service\target\classes started by cmadival in C:\Users\cmadival\Documents\workspace\microservices-demo)
+2022-01-16 12:01:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-01-16 12:01:36 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through field 'streamRunner'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'StreamRunner' available: expected single matching bean but found 2: mockKafkaStreamRunnerImpl,twitterKafkaStreamRunnerImpl
+2022-01-16 12:01:36 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-16 12:01:36 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field streamRunner in TwitterToKafkaServiceApplication required a single bean, but 2 were found:
+	- mockKafkaStreamRunnerImpl: defined in file [C:\Users\cmadival\Documents\workspace\microservices-demo\twitter-to-kafka-service\target\classes\com\microservice\demo\twitter\to\kafka\service\runner\impl\MockKafkaStreamRunnerImpl.class]
+	- twitterKafkaStreamRunnerImpl: defined in file [C:\Users\cmadival\Documents\workspace\microservices-demo\twitter-to-kafka-service\target\classes\com\microservice\demo\twitter\to\kafka\service\runner\impl\TwitterKafkaStreamRunnerImpl.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+2022-01-16 12:02:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on L-MAA-42620027 with PID 13332 (C:\Users\cmadival\Documents\workspace\microservices-demo\twitter-to-kafka-service\target\classes started by cmadival in C:\Users\cmadival\Documents\workspace\microservices-demo)
+2022-01-16 12:02:47 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-01-16 12:02:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.842 seconds (JVM running for 3.059)
+2022-01-16 12:02:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2022-01-16 12:02:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-01-16 12:02:48 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunnerImpl - Starting mock twitter stream
+2022-01-16 12:02:48 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - consectetuer Lorem Fusce Lorem ultricies massa Java adipiscing sit dolor magna
+2022-01-16 12:02:58 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - magna sit lectus lectus massa ultricies Microservices consectetuer magna Fusce sit sit
+2022-01-16 12:03:08 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - adipiscing purus Fusce elit sit Fusce Kafka dolor sed ipsum lectus
+2022-01-16 12:03:18 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - lectus adipiscing Lorem sed adipiscing lectus Lorem Java malesuada elit congue pulvinar adipiscing
+2022-01-16 12:03:28 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - posuere Fusce dolor pulvinar Lorem Elasticsearch consectetuer consectetuer dolor amet
+2022-01-16 12:03:38 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - consectetuer ultricies amet posuere Spring consectetuer massa
+2022-01-16 12:03:48 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - sit sit libero massa Maecenas pulvinar Maecenas Spring dolor sed Lorem sit malesuada
+2022-01-16 12:03:58 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - massa magna libero libero Java dolor purus sed
+2022-01-16 12:04:08 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - purus posuere ipsum massa consectetuer Elasticsearch elit libero purus
+2022-01-16 12:04:18 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - pulvinar amet elit Kafka libero ipsum
+2022-01-16 12:04:28 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Fusce Lorem purus porttitor sed ultricies sed Java pulvinar adipiscing posuere Lorem sed
+2022-01-16 12:04:38 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - adipiscing Fusce ipsum malesuada amet pulvinar porttitor amet Microservices massa Lorem libero congue congue adipiscing
+2022-01-16 12:04:48 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - sed adipiscing posuere massa elit Microservices libero malesuada pulvinar
+2022-01-16 12:04:58 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - lectus sed ipsum congue ipsum Maecenas Maecenas Spring consectetuer pulvinar Maecenas ipsum libero consectetuer
+2022-01-16 12:05:08 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - purus elit pulvinar ipsum Elasticsearch Maecenas porttitor dolor
+2022-01-16 12:05:18 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Maecenas congue porttitor sed posuere Fusce Kafka ipsum porttitor adipiscing purus adipiscing
+2022-01-16 12:05:28 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - amet pulvinar porttitor lectus libero magna Lorem Spring consectetuer ultricies adipiscing congue massa massa
+2022-01-16 12:06:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on L-MAA-42620027 with PID 21496 (C:\Users\cmadival\Documents\workspace\microservices-demo\twitter-to-kafka-service\target\classes started by cmadival in C:\Users\cmadival\Documents\workspace\microservices-demo)
+2022-01-16 12:06:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-01-16 12:06:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.923 seconds (JVM running for 2.858)
+2022-01-16 12:06:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2022-01-16 12:06:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-01-16 12:06:40 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunnerImpl - Starting mock twitter stream
+2022-01-16 12:07:25 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - purus Maecenas Maecenas posuere Lorem posuere purus ipsum Microservices posuere Lorem lectus adipiscing sit dolor dolor
+2022-01-16 12:08:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on L-MAA-42620027 with PID 19332 (C:\Users\cmadival\Documents\workspace\microservices-demo\twitter-to-kafka-service\target\classes started by cmadival in C:\Users\cmadival\Documents\workspace\microservices-demo)
+2022-01-16 12:08:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-01-16 12:08:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.748 seconds (JVM running for 2.568)
+2022-01-16 12:08:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2022-01-16 12:08:04 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-01-16 12:08:09 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunnerImpl - Starting mock twitter stream
+2022-01-16 12:08:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on L-MAA-42620027 with PID 6600 (C:\Users\cmadival\Documents\workspace\microservices-demo\twitter-to-kafka-service\target\classes started by cmadival in C:\Users\cmadival\Documents\workspace\microservices-demo)
+2022-01-16 12:08:24 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-01-16 12:08:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.283 seconds (JVM running for 4.082)
+2022-01-16 12:08:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2022-01-16 12:08:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-01-16 12:08:29 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunnerImpl - Starting mock twitter stream
+2022-01-16 12:09:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on L-MAA-42620027 with PID 1004 (C:\Users\cmadival\Documents\workspace\microservices-demo\twitter-to-kafka-service\target\classes started by cmadival in C:\Users\cmadival\Documents\workspace\microservices-demo)
+2022-01-16 12:09:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-01-16 12:09:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.827 seconds (JVM running for 2.696)
+2022-01-16 12:09:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2022-01-16 12:09:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-01-16 12:09:40 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunnerImpl - Starting mock twitter stream
+2022-01-16 12:10:30 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on L-MAA-42620027 with PID 924 (C:\Users\cmadival\Documents\workspace\microservices-demo\twitter-to-kafka-service\target\classes started by cmadival in C:\Users\cmadival\Documents\workspace\microservices-demo)
+2022-01-16 12:10:30 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-01-16 12:10:30 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.106 seconds (JVM running for 1.897)
+2022-01-16 12:10:30 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2022-01-16 12:10:30 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-01-16 12:10:47 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunnerImpl - Starting mock twitter stream
+2022-01-16 12:11:26 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - ipsum Lorem pulvinar posuere purus Kafka ultricies consectetuer lectus sed
+2022-01-16 12:11:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on L-MAA-42620027 with PID 8608 (C:\Users\cmadival\Documents\workspace\microservices-demo\twitter-to-kafka-service\target\classes started by cmadival in C:\Users\cmadival\Documents\workspace\microservices-demo)
+2022-01-16 12:11:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-01-16 12:11:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.188 seconds (JVM running for 4.86)
+2022-01-16 12:11:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2022-01-16 12:11:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-01-16 12:11:46 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunnerImpl - Starting mock twitter stream
+2022-01-16 12:12:23 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - libero magna pulvinar dolor Elasticsearch sed libero
+2022-01-16 12:12:30 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on L-MAA-42620027 with PID 6320 (C:\Users\cmadival\Documents\workspace\microservices-demo\twitter-to-kafka-service\target\classes started by cmadival in C:\Users\cmadival\Documents\workspace\microservices-demo)
+2022-01-16 12:12:30 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-01-16 12:12:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 3.31 seconds (JVM running for 5.187)
+2022-01-16 12:12:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2022-01-16 12:12:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-01-16 12:12:35 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunnerImpl - Starting mock twitter stream
+2022-01-16 12:13:48 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - lectus purus libero ultricies magna ipsum Kafka posuere consectetuer dolor amet massa
+2022-01-16 12:14:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on L-MAA-42620027 with PID 6552 (C:\Users\cmadival\Documents\workspace\microservices-demo\twitter-to-kafka-service\target\classes started by cmadival in C:\Users\cmadival\Documents\workspace\microservices-demo)
+2022-01-16 12:14:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-01-16 12:14:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 2.819 seconds (JVM running for 4.86)
+2022-01-16 12:14:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2022-01-16 12:14:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-01-16 12:14:21 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunnerImpl - Starting mock twitter stream
+2022-01-16 12:26:13 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - ultricies amet porttitor massa malesuada massa purus adipiscing Microservices Maecenas lectus dolor dolor pulvinar consectetuer magna
+2022-01-16 12:26:45 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - sit congue Maecenas dolor libero malesuada Maecenas malesuada Elasticsearch purus sit libero porttitor ultricies Maecenas
+2022-01-16 16:24:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on L-MAA-42620027 with PID 14772 (C:\Users\cmadival\Documents\workspace\microservices-demo\twitter-to-kafka-service\target\classes started by cmadival in C:\Users\cmadival\Documents\workspace\microservices-demo)
+2022-01-16 16:24:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-01-16 16:24:08 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through field 'streamRunner'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-01-16 16:24:08 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-16 16:24:08 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field streamRunner in TwitterToKafkaServiceApplication required a bean of type 'StreamRunner' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'StreamRunner' in your configuration.
+
+2022-01-16 16:27:54 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.10 on L-MAA-42620027 with PID 22324 (C:\Users\cmadival\Documents\workspace\microservices-demo\twitter-to-kafka-service\target\classes started by cmadival in C:\Users\cmadival\Documents\workspace\microservices-demo)
+2022-01-16 16:27:54 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2022-01-16 16:27:55 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.697 seconds (JVM running for 2.275)
+2022-01-16 16:27:55 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App started...
+2022-01-16 16:27:55 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-01-16 16:27:55 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunnerImpl - Starting mock twitter stream
+2022-01-16 16:27:55 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - congue elit massa congue Java porttitor malesuada
+2022-01-16 16:28:05 [pool-1-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - ultricies dolor pulvinar dolor ultricies congue Java sed porttitor ipsum congue Maecenas
